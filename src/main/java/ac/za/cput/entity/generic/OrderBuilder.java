@@ -1,8 +1,8 @@
-package ac.za.cput.entity.user;
+package ac.za.cput.entity.generic;
 
 public class OrderBuilder
 {
-    private String orderNum;
+    //private String orderNum;
     private String clerkId;
     private String stockId;
     private String description;
@@ -10,9 +10,9 @@ public class OrderBuilder
 
     private OrderBuilder(){}
 
-    public OrderBuilder(OrderBuilder.Builder builder)
+    public OrderBuilder(Builder builder)
     {
-        this.orderNum = builder.orderNum;
+        //this.orderNum = builder.orderNum;
         this.clerkId = builder.clerkId;
         this.stockId = builder.stockId;
         this.description = builder.description;
@@ -22,22 +22,12 @@ public class OrderBuilder
 
     public static class Builder
     {
-        private String orderNum;
+        //private String orderNum;
         private String clerkId;
         private String stockId;
         private String description;
         private String date;
 
-
-        public String getOrderNum()
-        {
-            return orderNum;
-        }
-
-        public void setOrderNum(String orderNum)
-        {
-            this.orderNum = orderNum;
-        }
 
         public String getClerkId()
         {
@@ -81,7 +71,7 @@ public class OrderBuilder
 
         public Builder copy(OrderBuilder orderBuilder)
         {
-            this.orderNum = orderBuilder.orderNum;
+            //this.orderNum = orderBuilder.orderNum;
             this.clerkId = orderBuilder.clerkId;
             this.stockId = orderBuilder.stockId;
             this.description = orderBuilder.description;
@@ -99,7 +89,7 @@ public class OrderBuilder
     public String toString()
     {
         return "Order{" +
-                "orderNum='" + orderNum + '\'' +
+                "orderNum='" + //orderNum + '\'' +
                 ", clerkId='" + clerkId + '\'' +
                 ", stockId='" + stockId + '\'' +
                 ", description='" + description + '\'' +

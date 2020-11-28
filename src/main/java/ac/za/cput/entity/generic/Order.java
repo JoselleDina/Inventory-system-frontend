@@ -1,10 +1,10 @@
-package ac.za.cput.entity.user;
+package ac.za.cput.entity.generic;
 
 import java.io.Serializable;
 
 public class Order implements Serializable
 {
-    private String orderNum;
+    //private String orderNum;
     private String clerkId;
     private String stockId;
     private String description;
@@ -15,24 +15,13 @@ public class Order implements Serializable
     {
     }
 
-    public Order(String orderNum, String clerkId, String stockId, String description, String date)
+    public Order(String clerkId, String stockId, String description, String date)
     {
-        this.orderNum = orderNum;
+        //this.orderNum = orderNum;
         this.clerkId = clerkId;
         this.stockId = stockId;
         this.description = description;
         this.date = date;
-    }
-
-
-    public String getOrderNum()
-    {
-        return orderNum;
-    }
-
-    public void setOrderNum(String orderNum)
-    {
-        this.orderNum = orderNum;
     }
 
     public String getClerkId()
@@ -80,7 +69,7 @@ public class Order implements Serializable
     public String toString()
     {
         return "Order{" +
-                "orderNum='" + orderNum + '\'' +
+                "orderNum='" + //orderNum + '\'' +
                 ", clerkId='" + clerkId + '\'' +
                 ", stockId='" + stockId + '\'' +
                 ", description='" + description + '\'' +
