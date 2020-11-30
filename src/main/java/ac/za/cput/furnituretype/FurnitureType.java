@@ -1,11 +1,5 @@
 package ac.za.cput.furnituretype;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import ac.za.cput.entity.equipment.FurnitureTypeLookup;
 import ac.za.cput.util.HTTPHepler;
 import com.fasterxml.jackson.databind.ObjectMapper;
