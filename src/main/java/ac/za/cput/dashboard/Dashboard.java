@@ -1,6 +1,7 @@
 package ac.za.cput.dashboard;
 
 import ac.za.cput.furnituretype.FurnitureType;
+import ac.za.cput.stockform.StockForm;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -424,7 +425,10 @@ public class Dashboard extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void trackStockLblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_trackStockLblMouseClicked
-        // TODO add your handling code here:
+        StockForm stock = new StockForm();
+        stock.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        stock.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_trackStockLblMouseClicked
 
     private void stockTypeLblMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_stockTypeLblMouseClicked
