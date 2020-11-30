@@ -7,9 +7,7 @@ package ac.za.cput.loginform;
 
 import ac.za.cput.controlclerkform.CreateClerkForm;
 import ac.za.cput.dashboard.Dashboard;
-import ac.za.cput.entity.generic.University;
 import ac.za.cput.entity.user.ControlClerk;
-import ac.za.cput.entity.user.Login;
 import ac.za.cput.util.HTTPHepler;
 import com.google.gson.Gson;
 
@@ -49,7 +47,6 @@ public class LoginPage extends JFrame {
 
     @SuppressWarnings("unchecked")
     private void initComponents() {
-
         jPanel1 = new JPanel();
         jPanel2 = new JPanel();
         jLabel1 = new JLabel();
@@ -78,18 +75,18 @@ public class LoginPage extends JFrame {
         GroupLayout jPanel2Layout = new GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-            .addGroup(GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(89, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(72, 72, 72))
+                jPanel2Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addGroup(GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addContainerGap(89, Short.MAX_VALUE)
+                                .addComponent(jLabel1)
+                                .addGap(72, 72, 72))
         );
         jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-            .addGroup(GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, GroupLayout.PREFERRED_SIZE, 200, GroupLayout.PREFERRED_SIZE)
-                .addGap(195, 195, 195))
+                jPanel2Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addGroup(GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel1, GroupLayout.PREFERRED_SIZE, 200, GroupLayout.PREFERRED_SIZE)
+                                .addGap(195, 195, 195))
         );
 
         slogan1.setFont(new Font("SansSerif", 1, 24)); // NOI18N
@@ -155,7 +152,6 @@ public class LoginPage extends JFrame {
                 }
             }
         });
-
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -281,9 +277,11 @@ public class LoginPage extends JFrame {
                     dashboard.pack();
                     dashboard.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     this.dispose();
+                    break;
 
                 }else {
                     JOptionPane.showMessageDialog(null, "Login failed");
+                    break;
 
                 }
             }
