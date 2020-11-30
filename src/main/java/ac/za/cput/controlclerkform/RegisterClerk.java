@@ -367,9 +367,11 @@ public class RegisterClerk extends JFrame {
         }else if(surname.trim().equals("")){
             JOptionPane.showMessageDialog(null, "Please enter your surname");
 
-        }else if(phoneNo.trim().equals("") || phoneNo.trim().length() < 10 || phoneNo.trim().length() > 10
-                && email.trim().equals("")){
-            JOptionPane.showMessageDialog(null, "Phone number or email doesn't exist");
+        }else if(phoneNo.trim().equals("") || phoneNo.trim().length() < 10 || phoneNo.trim().length() > 10){
+            JOptionPane.showMessageDialog(null, "Please check your phone number");
+
+        }else if(email.trim().equals("")){
+            JOptionPane.showMessageDialog(null, "Please enter your email");
 
         }else{
             clerkProfile.setVisible(true);

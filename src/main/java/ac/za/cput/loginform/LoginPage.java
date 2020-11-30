@@ -6,6 +6,7 @@
 package ac.za.cput.loginform;
 
 import ac.za.cput.controlclerkform.CreateClerkForm;
+import ac.za.cput.dashboard.Dashboard;
 import ac.za.cput.entity.generic.University;
 import ac.za.cput.entity.user.ControlClerk;
 import ac.za.cput.entity.user.Login;
@@ -275,16 +276,15 @@ public class LoginPage extends JFrame {
                 clerkPassword = controlClerks[x].getPassword();
 
                 if(emailTextF.getText().equals(clerkEmail) && String.valueOf(passwordTextF.getPassword()).equals(clerkPassword)){
-                    JOptionPane.showMessageDialog(null, "Control Clerk");
-                    /*clerkForm.setVisible(true);
-                    clerkForm.pack();
-                    clerkForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    this.dispose();*/
-                    break;
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.setVisible(true);
+                    dashboard.pack();
+                    dashboard.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    this.dispose();
 
                 }else {
                     JOptionPane.showMessageDialog(null, "Login failed");
-                    break;
+
                 }
             }
         }
