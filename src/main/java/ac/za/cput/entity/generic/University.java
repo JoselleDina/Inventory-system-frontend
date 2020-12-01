@@ -7,6 +7,7 @@ package ac.za.cput.entity.generic;
 
 public class University{
 
+
     private String universityId, name, address;
 
     private University(){}
